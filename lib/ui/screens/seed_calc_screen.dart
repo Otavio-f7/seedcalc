@@ -54,7 +54,7 @@ class _SeedCalcScreenState extends State<SeedCalcScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          controller.addVariety(Variety(name: 'Milho 3',population: 1, thousandSeedWeight: 1, germinationRate: 1));
+          controller.addVariety(Variety(id: 22,name: 'Milho 3',population: 1, thousandSeedWeight: 1, germinationRate: 1));
           print(controller.varieties);
         },
         child: Icon(Icons.add_to_photos_rounded),

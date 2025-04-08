@@ -5,12 +5,14 @@ class PrefVarietyService implements IVarietyService{
 
   final List<Variety> tempoList = [
       Variety(
+        id: 1, 
         name: 'Milho 1',
         population: 10000, 
         thousandSeedWeight: 1, 
         germinationRate: 0.1,
       ),
       Variety(
+        id: 2, 
         name: 'Milho 2',
         population: 2, 
         thousandSeedWeight: 2, 
