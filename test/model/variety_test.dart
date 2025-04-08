@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:seedcalc/model/variety.dart';
+import 'package:seedcalc/models/variety.dart';
 
 void main() {
   group('Variety class tests', (){
@@ -15,6 +15,7 @@ void main() {
     });
     test('Should return a JSON', (){
       Variety variety = Variety(
+        name: 'Milho 1',
         population: 100, 
         thousandSeedWeight: 0.006, 
         germinationRate: 0.9
