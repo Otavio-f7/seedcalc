@@ -11,7 +11,7 @@ void main() {
       expect(Area.fromJson(json), isA<Area>());
     }); 
     test('Should return a JSON', (){
-      Area area = Area(lineSpacing: 10, squareMeters: 10);
+      Area area = Area(id: 1, varietyId: 1, lineSpacing: 10, squareMeters: 10);
       expect(area.toJson(), isA<Map<String, dynamic>>());
     }); 
   });

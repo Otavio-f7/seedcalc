@@ -1,27 +1,31 @@
 class Area {
+  final int id;
   final int lineSpacing; // in centimeters
   final int squareMeters;
-  final int variety_id;
+  final int varietyId;
 
   Area({
+    required this.id,
     required this.lineSpacing, 
     required this.squareMeters,
-    required this.variety_id,
+    required this.varietyId,
   });
 
   factory Area.fromJson(Map<String, dynamic> json){
     return Area(
+      id: int.parse(json['id']), 
       lineSpacing: int.parse(json['lineSpacing']), 
       squareMeters: int.parse(json['squareMeters']),
-      variety_id: int.parse(json['variety_id']),
+      varietyId: int.parse(json['varietyId']),
     );
   }
 
   Map<String, dynamic> toJson(){
     return{
+      'id' : id,
       'lineSpacing' : lineSpacing,
       'squareMeters' : squareMeters,
-      'variety_id' : variety_id,
+      'varietyId' : varietyId,
     };
   }
 }

@@ -15,6 +15,7 @@ void main() {
     });
     test('Should return a JSON', (){
       Variety variety = Variety(
+        id: 1,
         name: 'Milho 1',
         population: 100, 
         thousandSeedWeight: 0.006, 
